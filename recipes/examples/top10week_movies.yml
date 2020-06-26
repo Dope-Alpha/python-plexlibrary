@@ -12,10 +12,10 @@ source_libraries:
         # [Cloudbox] Example path below assumes main movies are located 
         # in "/mnt/unionfs/Media/Movies/Movies/" (i.e. Customizing Plex 
         # Library - Scenario 1 style).
-      - '/mnt/unionfs/Movies'
+      - '/mnt/unionfs/movies'
 # New library details
 new_library:
-  name: 'Filme - Top 10 of the Week'
+  name: 'Movies - Top 10 of the Week'
   # [Cloudbox] 'folder' = Path on host where symlinks are stored (i.e. 
   # '/mnt/local/Media/...').
   folder: '/mnt/recipes/movies/top10/'

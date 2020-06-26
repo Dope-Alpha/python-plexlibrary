@@ -6,16 +6,16 @@ source_list_urls:
 # Source library details
 source_libraries:
     # [Cloudbox] 'name' = Plex library name.
-  - name: 'Filme'
+  - name: 'Movies'
     # [Cloudbox] Plex library path (i.e /data/...).
     folders:
         # [Cloudbox] Example path below assumes main movies are located 
         # in "/mnt/unionfs/Media/Movies/Movies/" (i.e. Customizing Plex 
         # Library - Scenario 1 style).
-      - '/mnt/unionfs/Movies'
+      - '/mnt/unionfs/movies'
 # New library details
 new_library:
-  name: 'Filme - Action'
+  name: 'Movies - Action'
   # [Cloudbox] 'folder' = Path on host where symlinks are stored (i.e. 
   # '/mnt/local/Media/...').
   folder: '/mnt/recipes/movies/action/'

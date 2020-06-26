@@ -1,24 +1,24 @@
 # Supported types: movie, tv
-library_type: 'tv'
+library_type: 'movie'
 # Source list(s)
 source_list_urls:
-  - 'https://api.trakt.tv/users/theultimatec0der/lists/all-netflix-series/items/shows'
+  - 'https://api.trakt.tv/users/giladg/lists/latest-releases/items/movies'
 # Source library details
 source_libraries:
     # [Cloudbox] 'name' = Plex library name.
-  - name: 'Serien'
+  - name: 'Filme'
     # [Cloudbox] Plex library path (i.e /data/...).
     folders:
         # [Cloudbox] Example path below assumes main movies are located 
         # in "/mnt/unionfs/Media/Movies/Movies/" (i.e. Customizing Plex 
         # Library - Scenario 1 style).
-      - '/mnt/unionfs/tv'
+      - '/mnt/unionfs/movies'
 # New library details
 new_library:
-  name: 'Serien - Netflixs'
+  name: 'Movies - Latest Releases'
   # [Cloudbox] 'folder' = Path on host where symlinks are stored (i.e. 
   # '/mnt/local/Media/...').
-  folder: '/mnt/recipes/tv/netflixs/'
+  folder: '/mnt/recipes/movies/latest/'
   sort: true
   sort_title:
     format: '{title}'

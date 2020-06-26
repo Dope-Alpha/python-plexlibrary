@@ -2,11 +2,11 @@
 library_type: 'tv'
 # Source list(s)
 source_list_urls:
-  - 'https://api.trakt.tv/users/theultimatec0der/lists/all-hulu-series/items/shows'
+  - 'https://api.trakt.tv/users/theultimatec0der/lists/all-disney-series/items/shows'
 # Source library details
 source_libraries:
     # [Cloudbox] 'name' = Plex library name.
-  - name: 'Serien'
+  - name: 'TV Shows'
     # [Cloudbox] Plex library path (i.e /data/...).
     folders:
         # [Cloudbox] Example path below assumes main movies are located 
@@ -15,10 +15,10 @@ source_libraries:
       - '/mnt/unionfs/tv'
 # New library details
 new_library:
-  name: 'Serien - Hulu'
+  name: 'TV Shows - Disney+ '
   # [Cloudbox] 'folder' = Path on host where symlinks are stored (i.e. 
   # '/mnt/local/Media/...').
-  folder: '/mnt/recipes/tv/hulu/'
+  folder: '/mnt/recipes/tv/disney/'
   sort: true
   sort_title:
     format: '{title}'

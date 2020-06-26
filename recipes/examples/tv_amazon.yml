@@ -6,7 +6,7 @@ source_list_urls:
 # Source library details
 source_libraries:
     # [Cloudbox] 'name' = Plex library name.
-  - name: 'Serien'
+  - name: 'TV Shows'
     # [Cloudbox] Plex library path (i.e /data/...).
     folders:
         # [Cloudbox] Example path below assumes main movies are located 
@@ -15,7 +15,7 @@ source_libraries:
       - '/mnt/unionfs/tv'
 # New library details
 new_library:
-  name: 'Serien - Amazon'
+  name: 'TV Shows - Amazon'
   # [Cloudbox] 'folder' = Path on host where symlinks are stored (i.e. 
   # '/mnt/local/Media/...').
   folder: '/mnt/recipes/tv/Amazon/'

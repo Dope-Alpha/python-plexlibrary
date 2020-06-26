@@ -5,20 +5,19 @@ library_type: 'movie'
 source_list_urls:
   - 'https://api.trakt.tv/users/outlanders/lists/complete-1001-movies-you-must-see-before-you-die/items/movies'
 
-# Source library details
-source_libraries:
+  source_libraries:
+    # [Cloudbox] 'name' = Plex library name.
   - name: 'Movies'
+    # [Cloudbox] Plex library path (i.e /data/...).
     folders:
-      - '/path/to/Movies'
-      - '/path/to/More Movies'
-  - name: 'Different Movies'
-    folders:
-      - '/path/to/Different Movies'
-
+        # [Cloudbox] Example path below assumes main movies are located 
+        # in "/mnt/unionfs/Media/Movies/Movies/" (i.e. Customizing Plex 
+        # Library - Scenario 1 style).
+      - '/mnt/unionfs/movies'
 # New library details
 new_library:
   name: 'Movies - 1001 Movies You Must See Before You Die'
-  folder: '/path/to/symlink/supporting/filesystem/Movies - 1001 Must/'
+  folder: '/mnt/recipes/movies/Movies - 1001 Must/'
   sort: true
   sort_title:
     format: '{number}. {title}'

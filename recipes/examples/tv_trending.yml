@@ -10,20 +10,19 @@ source_list_urls:
   - 'https://api.trakt.tv/shows/watched/monthly?limit=50'
   - 'https://api.trakt.tv/shows/watched/yearly?limit=100'
 
-# Source library details
-source_libraries:
+  source_libraries:
+    # [Cloudbox] 'name' = Plex library name.
   - name: 'TV Shows'
+    # [Cloudbox] Plex library path (i.e /data/...).
     folders:
-      - '/path/to/TV Shows'
-      - '/path/to/More TV Shows'
-  - name: 'Different Shows'
-    folders:
-      - '/path/to/Different Shows'
-
+        # [Cloudbox] Example path below assumes main movies are located 
+        # in "/mnt/unionfs/Media/Movies/Movies/" (i.e. Customizing Plex 
+        # Library - Scenario 1 style).
+      - '/mnt/unionfs/tv'
 # New library details
 new_library:
   name: 'TV - Trending'
-  folder: '/path/to/symlink/supporting/filesystem/TV - Trending/'
+  folder: '/mnt/recipes/tv/TV - Trending/'
   sort: true
   sort_title:
     format: '{number}. {title}'
