@@ -11,7 +11,7 @@ EOF
 }
 
 function clone() {
-    sudo git clone -b master --single-branch https://github.com/Hawkinzzz/python-plexlibrary.git   /opt/appdata
+    sudo git clone -b master --single-branch https://github.com/Hawkinzzz/python-plexlibrary.git   /opt/appdata/python-plexlibrary/
     sudo chown -cR 1000:1000 /opt/appdata/python-plexlibrary/ 1>/dev/null 2>&1
     sudo chmod -cR 755 /opt/appdata/python-plexlibrary/ >> /dev/null 1>/dev/null 2>&1
     cd /opt/appdata/python-plexlibrary/
